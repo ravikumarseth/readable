@@ -1,0 +1,337 @@
+* {
+  text-align: center;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #EBEB6F;
+}
+
+.commentSubmitButton {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: cadetblue;
+  margin: 0;
+  padding: 10px;
+}
+
+h1 a {
+  color: #000;
+}
+
+.header {
+  background-color: cadetblue;
+  position: fixed;
+  top: 35px;
+  margin: 20px 0 0 0;
+  left: 0;
+  width: 100%;
+}
+
+.header h2 {
+  margin: 0;
+  color: #000;
+}
+
+.header ul {
+  padding: 10px 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header a {
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #000;
+  margin-bottom: 10px;
+}
+
+.newPost {
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.addPostButton {
+  color: #000;
+  background-color: cornflowerblue;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px 0 #ccc;
+  cursor: pointer;
+}
+
+.edit,
+.delete,
+.sortDiv button,
+.postDeleteHeader button,
+.commentDeleteHeader button,
+.commentEditHeader button,
+.createPost,
+.editButton,
+.cancelButton {
+  background-color: cornflowerblue;
+  font-weight: bold;
+  color: #000;
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 0 #ccc;
+}
+
+.categoryPost {
+  padding-top: 130px;
+}
+
+.comment {
+  background-color: #F3F3A9;
+  margin: 20px 20px 0;
+  border: 1px cadetblue solid;
+}
+
+.commentHeader,
+.postHeader {
+  display: flex;
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+.commentControls,
+.postControls {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.commentControls button,
+.postHeader button {
+  padding: 5px;
+  margin: 5px;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.commentVoteScore,
+.postVoteScore {
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.commentDetails,
+.postDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-around;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.editDeleteButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.editDeleteButtons span {
+  margin-bottom: 20px;
+}
+
+.commentsList {
+  background-color: #F3F3A9;
+  margin: 20px;
+  padding: 0 20px 20px;
+}
+
+.noComments {
+  padding: 20px;
+}
+
+.commentAuthor,
+.postAuthor,
+.postTitle,
+.postCategory {
+  font-size: 25px;
+  color: cornflowerblue;
+}
+
+.postCategory {
+  margin: 0;
+}
+
+.commentDate,
+.postDate {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.commentBody,
+.postBody {
+  font-size: 1.3em;
+}
+
+.postBody {
+  margin: 30px 0;
+}
+
+.numberComments {
+  align-self: flex-end;
+}
+
+.newComment {
+  background-color: #F3F3A9;
+  padding: 20px 0;
+  margin: 20px 20px 0;
+}
+
+.newComment h2 {
+  padding: 10px;
+}
+
+.newComment form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newCommentFormContainer {
+  background-color: aliceblue;
+}
+
+.commentAuthorText,
+.commentBodyText {
+  padding: 5px;
+  margin: 10px;
+}
+
+.sortDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
+
+.sortDiv button,
+.createPost,
+.editButton,
+.cancelButton {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.edit:active,
+.delete:active,
+.createPost:active,
+.editButton:active,
+.cancelButton:active,
+.addPostButton:active,
+.sortDiv button:active,
+.commentControls button:active,
+.postHeader button:active,
+.postDeleteHeader button:active,
+.commentDeleteHeader button:active,
+.commentEditHeader button:active {
+  background-color: #000;
+  color: cornflowerblue;
+}
+
+.postDeleteHeader button,
+.commentDeleteHeader button {
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.commentDeleteHeader,
+.commentEditHeader {
+  background-color: aliceblue;
+  border: 1px solid cornflowerblue;
+  padding: 20px;
+  margin: 20px;
+}
+
+.postHeader,
+.postDeleteHeader,
+.postNotFoundHeader {
+  background-color: beige;
+  padding: 20px;
+  margin: 20px;
+}
+
+.postDeleteHeader h2,
+.postDeleteHeader h3,
+.postDeleteHeader h4 {
+  margin: 10px;
+  color: #000;
+  font-size: 1.5em;
+}
+
+.commentEditHeader form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.commentEditHeader input {
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+}
+
+.commentEditHeader button {
+  margin: 10px;
+}
+
+.postPage,
+.newPostPage,
+.editPostPage {
+  margin-top: 80px;
+}
+
+.newPostPage form,
+.editPostPage form {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newPostPage input,
+.editPostPage input {
+  padding: 5px;
+  margin: 10px;
+  width: 70%;
+}
+
+.newPostPage textarea,
+.editPostPage textarea {
+  width: 70%;
+  min-height: 250px;
+  margin: 10px;
+}
